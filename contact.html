@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Mobile Shop</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.contact-info,
+.contact-form{
+    flex:1;
+    min-width:300px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#0d6efd;
+}
+
+.info-item{
+    margin:15px 0;
+    font-size:16px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-sizing:border-box;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border:none;
+    background:#28a745;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#218838;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>📱 Mobile Shop</h1>
+    <p>We're Here to Help You</p>
+</header>
+
+<div class="container">
+
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+
+        <div class="info-item">
+            <strong>🏢 Store Name:</strong><br>
+            Mobile Shop
+        </div>
+
+        <div class="info-item">
+            <strong>📍 Address:</strong><br>
+            Main Market Road, Mul, Maharashtra, India
+        </div>
+
+        <div class="info-item">
+            <strong>📞 Phone:</strong><br>
+            +91 98765 43210
+        </div>
+
+        <div class="info-item">
+            <strong>📧 Email:</strong><br>
+            support@mobileshop.com
+        </div>
+
+        <div class="info-item">
+            <strong>🕒 Business Hours:</strong><br>
+            Monday - Saturday<br>
+            9:00 AM - 10:00 PM
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <h2>Send Us a Message</h2>
+
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Mobile Number</label>
+            <input type="tel" placeholder="Enter your phone number">
+
+            <label>Message</label>
+            <textarea rows="5" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Mobile Shop | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

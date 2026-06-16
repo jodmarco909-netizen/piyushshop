@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Shop Order Form</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+}
+
+.header{
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container{
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    text-align: center;
+    color: #333;
+}
+
+label{
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.radio-group{
+    margin-top: 10px;
+}
+
+.radio-group label{
+    display: inline;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+button{
+    width: 100%;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #218838;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Mobile Shop</h1>
+    <p>Online Mobile Order Form</p>
+</div>
+
+<div class="container">
+    <h2>Place Your Order</h2>
+
+    <form>
+
+        <label>Customer Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter mobile number" required>
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter email">
+
+        <label>Select Mobile Model</label>
+        <select required>
+            <option value="">Choose Mobile</option>
+            <option>iPhone 15 - ₹69,900</option>
+            <option>Samsung Galaxy S24 - ₹74,999</option>
+            <option>OnePlus 12 - ₹64,999</option>
+            <option>Redmi Note 13 Pro - ₹24,999</option>
+            <option>Realme GT 6 - ₹39,999</option>
+        </select>
+
+        <label>Quantity</label>
+        <input type="number" min="1" value="1">
+
+        <label>Delivery Address</label>
+        <textarea rows="4" placeholder="Enter full address"></textarea>
+
+        <label>Payment Method</label>
+        <div class="radio-group">
+            <input type="radio" name="payment" checked> Cash on Delivery
+            <input type="radio" name="payment"> UPI
+            <input type="radio" name="payment"> Card
+            <input type="radio" name="payment"> Loan
+            <input type="radio" name="payment"> EMI
+        </div>
+
+        <button type="submit">Place Order</button>
+
+    </form>
+</div>
+
+</body>
+</html>
